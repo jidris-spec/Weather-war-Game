@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>GAME</title>
+</head>
+<body>
+    <div id="gameDiv">
+      <h1 = "gameText" id = "playerText">Player:</h1>
+      <h1 = "gameText" id = "computerText">Computer:</h1>
+      <h1 = "gameText" id = "resultText">Result:</h1>
+
+      <button class="choicebtn">SUN</button>
+      <button class="choicebtn">SNOW</button>
+      <button class="choicebtn">RAIN</button>
+      <button onclick="showPopup()">Game instruction</button>
+
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p id="longMessage" class="message-content">
+            This game is between the computer and one person. Weather Wars Sun, Rain, and Snow is a simple game often used as a decision making tool or a quick game like Rock, Paper, and Scissors. This game is between the computer and one person. It is played by one participant. The Player can choose from "Sun," "Rain," and "Snow." The rules are: The basic rules of the game are straightforward:
+      
+            The sun beats Snow (The sun melts the snow).
+            Snow beats Rain (Snowfall extinguishes rain).
+            Rain beats the Sun (Rain can cool down on a sunny day).
+            
+            Weather Wars is often used for simple decision-making when two people need to resolve a dispute or make a choice without any bias. It's popular for its simplicity and the fact that it's based entirely on chance, making it a fair way to make decisions in certain situations.
+            <br><br>
+            For more information, check <a href="https://github.com/jidris-spec/WeatherWars-Game" target="_blank">here</a>.
+          </p>
+        </div>
+      </div>
+      
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
